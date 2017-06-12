@@ -1,3 +1,6 @@
 .vagrant/*
-shared/*.pub
-shared/*.tgz
+shared/*
+!shared/ansible_master_prep.yml
+!shared/hosts.ansible
+!shared/hosts.etc
+!shared/splunk.init
