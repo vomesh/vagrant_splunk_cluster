@@ -210,7 +210,8 @@ if sudo -u vagrant [ ! -f /home/vagrant/.ssh/id_rsa ]; then
   sudo -u vagrant cat /tmp/shared/ansiblemaster.pub >> /home/vagrant/.ssh/authorized_keys
   sudo -u vagrant sort /home/vagrant/.ssh/authorized_keys | uniq > /home/vagrant/.ssh/authorized_keys.uniq
   sudo -u vagrant mv -f /home/vagrant/.ssh/authorized_keys{.uniq,}
-fi  
+fi
+sudo ansible-playbook /tmp/shared/ansible_master_prep.yml  
 echo Done installing Ansible!
 SCRIPT
 
