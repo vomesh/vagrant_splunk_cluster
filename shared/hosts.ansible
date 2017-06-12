@@ -1,0 +1,35 @@
+# This section can be used to tell ansible how to reach hosts.  I have commented it and changed to pushing a normal Linux hosts file instead so process other than Ansible can also reach hosts by name.
+#
+#ansiblemaster	ansible_ssh_host=192.168.30.105 
+#splunkidx01		ansible_ssh_host=192.168.30.106 
+#splunkidx02		ansible_ssh_host=192.168.30.107 
+#splunkidx03		ansible_ssh_host=192.168.30.108 
+#splunkshc01		ansible_ssh_host=192.168.30.109 
+#splunkshc02		ansible_ssh_host=192.168.30.110 
+#splunkshc03		ansible_ssh_host=192.168.30.111 
+#splunkcm01		ansible_ssh_host=192.168.30.112 
+#splunkuf01		ansible_ssh_host=192.168.30.113 
+#splunkuf02		ansible_ssh_host=192.168.30.114 
+
+#########################
+# Ansible server groups #
+#########################
+[local]
+ansiblemaster
+
+[indexers]
+splunkidx01
+splunkidx02
+splunkidx03
+
+[search_heads]
+splunkshc01
+splunkshc02
+splunkshc03
+
+[cluster_master]
+splunkcm01
+
+[splunk_forwarders]
+splunkuf01
+splunkuf02

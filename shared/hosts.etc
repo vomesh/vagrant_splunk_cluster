@@ -1,0 +1,12 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+192.168.30.105		ansiblemaster
+192.168.30.106		splunkidx01
+192.168.30.107		splunkidx02
+192.168.30.108		splunkidx03
+192.168.30.109		splunkshc01
+192.168.30.110		splunkshc02
+192.168.30.111		splunkshc03
+192.168.30.112		splunkcm01
+192.168.30.113		splunkuf01
+192.168.30.114		splunkuf02
