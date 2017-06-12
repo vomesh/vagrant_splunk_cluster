@@ -17,6 +17,9 @@
 [local]
 ansiblemaster
 
+[cluster_master]
+splunkcm01
+
 [indexers]
 splunkidx01
 splunkidx02
@@ -27,9 +30,6 @@ splunkshc01
 splunkshc02
 splunkshc03
 
-[cluster_master]
-splunkcm01
-
-[splunk_forwarders]
+[forwarders_linux]
 splunkuf01
 splunkuf02
